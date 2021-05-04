@@ -1,3 +1,61 @@
-.movie:hover{
-    opacity: 0.5;
+body {
+    color: white;
+    background-image:  linear-gradient(170deg, #008060 50%, #FFFFFF 45%);
+    background-repeat: no-repeat;
+    font-family: "Helvetica","Arial",sans-serif;
 }
+
+.button-radius {
+    border-radius: 5px;
+    background-color: #212326;
+    color: white;
+    font-weight:547;
+    line-height: 1.2;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.button-radius:disabled {
+    border-radius: 5px;
+    background-color: #d8d8d8;
+    cursor: default;
+}
+.search-bar {
+    width: 60%;
+    height: 2.3em;
+    border-radius: 7px;
+}
+
+.search-icon {
+    font-size: large;
+    padding: 0.5em;
+}
+
+.logo {
+    font-weight: 530;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+main h1 {
+    font-weight: bold;
+}
+main {
+    text-align: center;
+}
+
+.movie-card {
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 840px){
+
+    #results {
+        color: #008060;
+    }
+  }
+
+  

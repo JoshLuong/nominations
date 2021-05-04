@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Filter({filter}) {
+function Filter({className, filter}) {
     return (
-      <div>
-            <h1> Search</h1>
-            <input type="search"
+      <div className = {className}>
+            <i className="fas fa-search search-icon" aria-hidden="true" /> 
+            <input className = "search-bar" type="text"
             key="filter"
             aria-label = "search for a movie"
-            placeholder={"e.g. Finding Nemo"}
+            placeholder={" Enter a movie (e.g. Liong King)"}
             onChange={(e) => filter(e.target.value)}
             />
       </div>
