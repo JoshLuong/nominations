@@ -2,7 +2,7 @@ import React from 'react';
 import Filter from './Filter'
 import Movie from './Movie';
 
-const OMDBAPI = 'http://www.omdbapi.com/?apikey=5dd5b153';
+const OMDBAPI = 'https://www.omdbapi.com/?apikey=5dd5b153';
 
 function Home() {
     const [nominations, setNominations] = React.useState(JSON.parse(localStorage.getItem("nominations")) || []);
