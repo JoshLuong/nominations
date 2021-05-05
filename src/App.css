@@ -1,7 +1,8 @@
 body {
     color: white;
-    background-image:  linear-gradient(170deg, #008060 50%, #FFFFFF 45%);
+    background-image:  linear-gradient(170deg, #00674d 50%, #FFFFFF 45%);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     font-family: "Helvetica","Arial",sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 .search-bar {
     width: 60%;
-    height: 2.3em;
+    height: 2.4em;
     border-radius: 7px;
 }
 
@@ -34,10 +35,12 @@ body {
 }
 
 .logo {
-    font-weight: 530;
-    font-style: italic;
-    font-variant: small-caps;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 550;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
 }
+
 
 main h1 {
     font-weight: bold;
@@ -48,14 +51,37 @@ main {
 
 .movie-card {
     text-align: center;
-    color: black;
+    color: #0e0f0f;
 }
 
-@media screen and (max-width: 840px){
+#nominations, #results {
+    color: #0e0f0f;
+}
 
-    #results {
-        color: #008060;
-    }
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba(	0,78,58, 0.8);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   }
+  
+  ::-webkit-scrollbar-thumb:window-inactive {
+      background: rgba(	0,78,58, 0.8);
+  }
+  
 
   

@@ -64,7 +64,9 @@ function Home() {
     return (
       <main className = "mdl-grid">
         <div className = "mdl-cell mdl-cell--12-col">
-            <h1 className = "logo">Filmify</h1>
+            <h1 className = "logo">
+                <i className="fas fa-forward" aria-hidden="true" /> Filmify
+            </h1>
             <Filter filter = {filter}></Filter>
         </div>
         <div className = "mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">

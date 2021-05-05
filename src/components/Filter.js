@@ -7,7 +7,7 @@ function Filter({className, filter}) {
             <input className = "search-bar" type="text"
             key="filter"
             aria-label = "search for a movie"
-            placeholder={" Enter a movie (e.g. Liong King)"}
+            placeholder={" Enter a movie (e.g. The Lion King)"}
             onChange={(e) => filter(e.target.value)}
             />
       </div>
