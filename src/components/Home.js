@@ -2,7 +2,7 @@ import React from 'react';
 import Filter from './Filter'
 import Movie from './Movie';
 
-const OMDBAPI = 'http://www.omdbapi.com/?apikey=5dd5b153';
+const OMDBAPI = 'https://www.omdbapi.com/?apikey=5dd5b153';
 
 function Home() {
     const [nominations, setNominations] = React.useState(JSON.parse(localStorage.getItem("nominations")) || []);
@@ -64,7 +64,9 @@ function Home() {
     return (
       <main className = "mdl-grid">
         <div className = "mdl-cell mdl-cell--12-col">
-            <h1 className = "logo">Filmify</h1>
+            <h1 className = "logo">
+                <i className="fas fa-forward" aria-hidden="true" /> Filmify
+            </h1>
             <Filter filter = {filter}></Filter>
         </div>
         <div className = "mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
