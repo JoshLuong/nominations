@@ -1,9 +1,11 @@
-# Filmify
+# Filmify @ https://joshluong.github.io/nominations/
 
 Filmify is a code challenge for Shopify. This simple application was built using React, ES6, and MDL. 
 Users will be able to 1. search for movies and 2. nominate/ remove movies from the nominations list.\
 
 Note that nominations are saved during each session via localStorage. 
+
+https://joshluong.github.io/nominations/
 
 ### `yarn start`
 
